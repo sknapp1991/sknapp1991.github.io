@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skylar Knapp — Web Developer & Automation Builder</title>
+<meta name="description" content="Skylar Knapp — freelance web developer and AI-assisted automation builder. Business websites, e-commerce storefronts, and content automation pipelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">SK<span class="dot">.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="hero-kicker">Web Developer &amp; Automation Builder</p>
+    <h1>I build websites that make small businesses money, and I automate the boring parts with AI.</h1>
+    <p class="hero-sub">
+      <!-- EDIT ME: 1-2 sentences in your own voice about who you are and what you're looking for. -->
+      Based in Rock Hill, SC. I design and ship small-business sites, build e-commerce storefronts
+      from scratch, and build automation pipelines that use AI tools (Claude, local TTS, FFmpeg) to
+      take repetitive production work off a human's plate. Open to freelance and full-time work.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See my work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-lede">Real projects, built end to end — design, code, and in some cases the backend and ops behind them.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card" data-tag="web">
+          <p class="project-tag">Business website</p>
+          <h3>Artsy Thing by Meredith</h3>
+          <p>A booking-focused site for a local paint-night &amp; tarot-reading business. Built from scratch
+          in HTML/CSS/JS and hosted publicly via a Cloudflare Tunnel — no paid hosting required.</p>
+          <ul class="project-stack">
+            <li>HTML/CSS/JS</li><li>Cloudflare Tunnel</li><li>Responsive design</li>
+          </ul>
+          <a href="#" class="project-link">View live site →</a>
+          <!-- EDIT ME: swap href for the real public URL once the tunnel/hosting is live. -->
+        </article>
+
+        <article class="project-card" data-tag="web">
+          <p class="project-tag">E-commerce</p>
+          <h3>210 Thrifty Ninja</h3>
+          <p>A full resale storefront for a San Antonio secondhand reseller, replacing a Vinted shop.
+          Migrated 380+ existing listings into a custom catalog, built a Firebase backend, an admin
+          panel for inventory management, and a Venmo/Cash App checkout flow.</p>
+          <ul class="project-stack">
+            <li>HTML/CSS/JS</li><li>Firebase</li><li>Admin dashboard</li><li>Payments flow</li>
+          </ul>
+          <a href="#" class="project-link">View live site →</a>
+        </article>
+
+        <article class="project-card" data-tag="automation">
+          <p class="project-tag">AI automation pipeline</p>
+          <h3>RedditTales336</h3>
+          <p>An end-to-end content pipeline for short-form video: pulls Reddit story posts, rewrites
+          them into narration scripts, generates voiceover with a local TTS model, renders vertical
+          video with FFmpeg and burned-in word-synced captions, then auto-cuts long stories into
+          multi-part Shorts.</p>
+          <ul class="project-stack">
+            <li>Python</li><li>PowerShell</li><li>FFmpeg</li><li>Local TTS</li><li>LLM scripting</li>
+          </ul>
+          <a href="#" class="project-link">View repo →</a>
+        </article>
+
+        <article class="project-card" data-tag="creative">
+          <p class="project-tag">AI-assisted publishing</p>
+          <h3>AI Coloring Book Generator</h3>
+          <p>A production pipeline for generating printable children's coloring books, using AI
+          image generation and automated PDF assembly to turn a concept into a print-ready book.</p>
+          <ul class="project-stack">
+            <li>Python</li><li>AI image generation</li><li>PDF automation</li>
+          </ul>
+          <a href="#" class="project-link">View repo →</a>
+        </article>
+
+        <article class="project-card" data-tag="freelance">
+          <p class="project-tag">Freelance content</p>
+          <h3>Resume Redesign — Holly K.</h3>
+          <p>Freelance resume rebuild for a bartending job search: restructured content around hiring-manager
+          priorities and delivered a polished, ATS-friendly document from a rough original.</p>
+          <ul class="project-stack">
+            <li>Content strategy</li><li>Document design</li>
+          </ul>
+          <a href="#" class="project-link">View case study →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Front-end</h3>
+          <p>HTML5, CSS3, JavaScript, responsive &amp; mobile-first layout, accessibility basics</p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; hosting</h3>
+          <p>Firebase, GitHub Pages, Cloudflare Tunnels, static-site deployment</p>
+        </div>
+        <div class="skill-group">
+          <h3>Automation &amp; scripting</h3>
+          <p>Python, PowerShell, FFmpeg, multi-stage production pipelines</p>
+        </div>
+        <div class="skill-group">
+          <h3>AI-assisted development</h3>
+          <p>Claude Code agentic workflows, prompt engineering, LLM-driven content &amp; code generation, local TTS/image models</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; workflow</h3>
+          <p>Git &amp; GitHub, VS Code, command-line tooling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap about-wrap">
+      <h2 class="section-title">About</h2>
+      <!-- EDIT ME: replace with your real background/story. Keep it short — 3-4 sentences. -->
+      <p>
+        I'm Skylar Knapp, a self-directed web developer and automation builder based in Rock Hill, SC.
+        I learned by shipping real projects for real people — family businesses, friends, and side
+        projects — rather than through a bootcamp or degree. I pair traditional web development with
+        AI-assisted tooling to move faster: using Claude Code as a daily collaborator for everything
+        from client sites to full production pipelines.
+      </p>
+      <p>
+        I'm looking for freelance or full-time work building websites, small business tooling, or
+        automation/AI-integration projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="resume" class="section section-alt">
+    <div class="wrap resume-wrap">
+      <h2 class="section-title">Resume</h2>
+      <p class="section-lede">
+        <!-- EDIT ME: once your resume PDF exists, drop it in assets/ and fix this link. -->
+        Download a copy of my resume, or get in touch directly below.
+      </p>
+      <a href="assets/resume.pdf" class="btn btn-primary">Download résumé (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="wrap">
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-lede">Open to freelance projects and full-time roles — web development, business tooling, and AI-assisted automation.</p>
+      <div class="contact-links">
+        <a href="mailto:knappstadawg@yahoo.com" class="btn btn-primary">Email me</a>
+        <a href="https://github.com/sknapp1991" class="btn btn-ghost" id="github-link">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Skylar Knapp. Built by hand, shipped with Claude Code.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
