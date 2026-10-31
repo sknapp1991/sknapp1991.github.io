@@ -266,6 +266,25 @@ a:hover { text-decoration: underline; }
 /* ---------- About / Resume ---------- */
 .about-wrap, .resume-wrap { max-width: 700px; }
 
+.resume-preview-link {
+  display: block;
+  margin-bottom: 1.8em;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.resume-preview-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.resume-preview-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ---------- Contact ---------- */
 .contact-section { text-align: left; }
 .contact-links { display: flex; gap: 14px; flex-wrap: wrap; }
