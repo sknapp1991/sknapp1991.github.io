@@ -9,7 +9,7 @@
   --line: #DCD3C2;
   --green: #2F4538;
 
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Bricolage Grotesque', Georgia, sans-serif;
   --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --radius: 6px;
@@ -135,15 +135,6 @@ a:hover { text-decoration: underline; }
   max-width: 820px;
 }
 
-.hero-kicker {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent);
-  margin-bottom: 1em;
-}
-
 .hero h1 {
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   color: var(--ink);
@@ -201,7 +192,6 @@ a:hover { text-decoration: underline; }
 .project-card {
   border: 1px solid var(--line);
   border-top: 3px solid var(--accent);
-  border-radius: var(--radius);
   background: var(--bg);
   overflow: hidden;
 }
