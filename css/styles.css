@@ -319,3 +319,52 @@ a:hover { text-decoration: underline; }
   .nav-toggle { display: flex; }
   .hero { padding: 64px 24px 48px; }
 }
+
+/* ---------- Featured work + case study (added 2026-11-03) ---------- */
+.project-card[data-tag="app"] { border-top-color: #3E6A8A; }
+
+.project-grid-featured { margin-bottom: 64px; }
+.project-grid-featured .project-card { border-top-width: 5px; }
+
+.subsection-title {
+  font-size: 1.3rem;
+  margin-bottom: 1.2em;
+}
+
+.built-with {
+  margin-top: 2.5em;
+  font-size: 0.95rem;
+}
+.built-with strong { color: var(--ink); }
+
+.case-study { max-width: 760px; padding-top: 72px; padding-bottom: 72px; }
+.case-study h1 { font-size: clamp(2rem, 4.5vw, 2.8rem); }
+.case-study h2 { font-size: 1.45rem; margin-top: 2em; }
+.case-study ul { color: var(--ink-soft); padding-left: 1.2em; }
+.case-study li { margin-bottom: 0.5em; }
+.case-study li strong, .case-study p strong { color: var(--ink); }
+.case-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 2em 0;
+}
+.case-stat {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  padding: 16px;
+}
+.case-stat b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: var(--ink);
+}
+.case-stat span { font-size: 0.85rem; color: var(--ink-soft); }
+.case-note {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  margin: 2em 0;
+}
+.case-note p:last-child { margin-bottom: 0; }

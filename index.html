@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skylar Knapp — Web Developer & Automation Builder</title>
-<meta name="description" content="Skylar Knapp — freelance web developer and AI-assisted automation builder. Business websites, e-commerce storefronts, and content automation pipelines.">
+<title>Skylar Knapp — AI Builder & Automation</title>
+<meta name="description" content="Skylar Knapp builds real, working software by directing AI (Claude Code): websites, a free multilingual scripture-study app, and always-on paper-trading research bots.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skylar Knapp — AI Builder & Automation">
+<meta property="og:description" content="I build websites, apps and automations with Claude Code.">
+<meta property="og:image" content="https://sknapp1991.github.io/assets/og.png">
+<meta property="og:url" content="https://sknapp1991.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +23,7 @@
     <a href="#top" class="wordmark">SK<span class="dot">.</span></a>
     <nav class="main-nav" id="main-nav">
       <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
+      <a href="#how">How I work</a>
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
       <a href="#contact" class="nav-cta">Contact</a>
@@ -31,11 +37,11 @@
 <main id="top">
 
   <section class="hero wrap">
-    <h1>I build websites that make small businesses money, and I automate the boring parts with AI.</h1>
+    <h1>I build websites, apps and automations with Claude Code.</h1>
     <p class="hero-sub">
-      Based in Rock Hill, SC. I design and ship small-business sites, build e-commerce storefronts
-      from scratch, and build automation pipelines that use AI tools (Claude, local TTS, FFmpeg) to
-      take repetitive production work off a human's plate. Open to freelance and full-time work.
+      I'm Skylar, based in Rock Hill, SC. I don't write code myself. I describe what I want to Claude
+      Code and keep refining until it works. So far that's shipped a couple of websites, a free multilingual
+      scripture-study app, and two always-on trading research bots with 800+ automated tests.
     </p>
     <div class="hero-actions">
       <a href="#work" class="btn btn-primary">See my work</a>
@@ -45,106 +51,95 @@
 
   <section id="work" class="section">
     <div class="wrap">
-      <h2 class="section-title">Selected work</h2>
-      <p class="section-lede">Real projects, built end to end — design, code, and in some cases the backend and ops behind them.</p>
+      <h2 class="section-title">Work</h2>
+      <p class="section-lede">Three things I've built with Claude Code.</p>
 
-      <div class="project-grid">
+      <div class="project-grid project-grid-featured">
 
         <article class="project-card" data-tag="web">
           <img class="project-thumb" src="assets/210-thrifty-ninja-screenshot.jpg" alt="210 Thrifty Ninja storefront homepage">
           <div class="project-card-body">
-            <p class="project-tag">E-commerce</p>
-            <h3>210 Thrifty Ninja</h3>
-            <p>A full resale storefront for a San Antonio secondhand reseller, replacing a Vinted shop.
-            Migrated 380+ existing listings into a custom catalog, built a Firebase backend, an admin
-            panel for inventory management, and a Venmo/Cash App checkout flow.</p>
+            <p class="project-tag">Websites</p>
+            <h3>Websites for my cousin &amp; me</h3>
+            <p><strong>210 Thrifty Ninja:</strong> a simple storefront for my cousin's resale shop, with 380+ listings
+            moved over from Vinted and a basic admin page for managing inventory.</p>
+            <p><strong>Resumes by Skylar:</strong> a site for my side resume service, plus a small generator that
+            makes Word resumes in 90+ style combinations.</p>
             <ul class="project-stack">
               <li>HTML/CSS/JS</li><li>Firebase</li><li>Admin dashboard</li><li>Payments flow</li>
             </ul>
-            <a href="https://210thriftyninja.com" class="project-link">View live site →</a>
+            <div class="project-links">
+              <a href="https://210thriftyninja.com" class="project-link">210thriftyninja.com →</a>
+              <a href="https://resumesbyskylar.com" class="project-link">resumesbyskylar.com →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tag="app">
+          <div class="project-card-body">
+            <p class="project-tag">Free public app · Android version in progress</p>
+            <h3>Verses Across</h3>
+            <p>A free scripture-study app: read texts side by side in many languages, in columns or verse by verse,
+            on desktop or phone. It launched with 17 public-domain Bibles in 11 languages, including right-to-left
+            Hebrew and Arabic, with more religions' texts coming.</p>
+            <p>Every text is imported by repeatable scripts from licence-verified public-domain sources. None of it
+            is ever generated by AI. Verse numbering differences between traditions are mapped, so translations line
+            up correctly or show an honest gap.</p>
+            <ul class="project-stack">
+              <li>Next.js</li><li>TypeScript</li><li>Cloudflare Workers</li><li>Data import pipeline</li><li>Licensing review</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://snoopwiggy.com" class="project-link">Try it live →</a>
+              <a href="https://github.com/sknapp1991/snoopwiggy" class="project-link">View repo →</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card" data-tag="automation">
-          <img class="project-thumb" src="assets/reddittales336-banner.png" alt="RedditTales336 channel banner">
           <div class="project-card-body">
-            <p class="project-tag">AI automation pipeline</p>
-            <h3>RedditTales336</h3>
-            <p>An end-to-end content pipeline for short-form video: pulls Reddit story posts, rewrites
-            them into narration scripts, generates voiceover with a local TTS model, renders vertical
-            video with FFmpeg and burned-in word-synced captions, then auto-cuts long stories into
-            multi-part Shorts.</p>
+            <p class="project-tag">Always-on data systems</p>
+            <h3>Paper-trading research bots</h3>
+            <p>Two research systems that watch live markets around the clock and trade them with pretend money. Every
+            idea has to prove itself on paper before real money is ever involved.</p>
+            <p>They started from a bare-bones starter prompt that didn't work. Now they're full systems with 820+ tests,
+            live dashboards, daily reports, verified backups and phone alerts.</p>
             <ul class="project-stack">
-              <li>Python</li><li>PowerShell</li><li>FFmpeg</li><li>Local TTS</li><li>LLM scripting</li>
+              <li>Python</li><li>Docker</li><li>GitHub Actions CI</li><li>Live dashboards</li><li>Monitoring</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/sknapp1991/reddit-tales-336" class="project-link">View repo →</a>
-              <a href="https://www.tiktok.com/@reddittales336" class="project-link">Watch on TikTok →</a>
+              <a href="trading-bots.html" class="project-link">Read the case study →</a>
             </div>
-          </div>
-        </article>
-
-        <article class="project-card" data-tag="freelance">
-          <img class="project-thumb" src="assets/resume-builder-preview.png" alt="Sample resume generated by the resume builder system">
-          <div class="project-card-body">
-            <p class="project-tag">Freelance business + tooling</p>
-            <h3>Resume Builder — Resumes by Skylar</h3>
-            <p>Built the backend for a local done-for-you resume service from scratch: a Node.js system that
-            programmatically generates polished, print-ready resumes across 7 distinct layouts and 13 color
-            palettes — 90+ style combinations from one data-driven pipeline, plus a catalog generator that
-            spits out a browsable, filterable index of every version so picking a final design takes seconds.</p>
-            <ul class="project-stack">
-              <li>Node.js</li><li>Programmatic .docx generation</li><li>Data-driven templating</li><li>Catalog/index tooling</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://resumesbyskylar.com" class="project-link">View live site →</a>
-              <a href="https://github.com/sknapp1991/resume-template-generator" class="project-link">View repo →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card" data-tag="creative">
-          <div class="project-card-body">
-            <p class="project-tag">AI-assisted publishing</p>
-            <h3>AI Coloring Book Generator</h3>
-            <p>A production pipeline for generating printable children's coloring books, using AI
-            image generation and automated PDF assembly to turn a concept into a print-ready book.</p>
-            <ul class="project-stack">
-              <li>Python</li><li>AI image generation</li><li>PDF automation</li>
-            </ul>
-            <a href="https://github.com/sknapp1991/coloring-book-generator" class="project-link">View repo →</a>
           </div>
         </article>
 
       </div>
+
     </div>
   </section>
 
-  <section id="skills" class="section section-alt">
+  <section id="how" class="section section-alt">
     <div class="wrap">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title">How I work</h2>
+      <p class="section-lede">I build everything with Claude Code. I don't write the code myself. I describe what I want, run what comes back, and keep going until it works the way I pictured it.</p>
       <div class="skills-grid">
         <div class="skill-group">
-          <h3>Front-end</h3>
-          <p>HTML5, CSS3, JavaScript, responsive &amp; mobile-first layout, accessibility basics</p>
+          <h3>Plan the big ones</h3>
+          <p>Bigger projects start with a written plan and get built one phase at a time, so each piece works before the next one starts.</p>
         </div>
         <div class="skill-group">
-          <h3>Backend &amp; hosting</h3>
-          <p>Firebase, GitHub Pages, Cloudflare Tunnels, static-site deployment</p>
+          <h3>Use it myself</h3>
+          <p>I run every version on my own desktop and phone, then go back with what's wrong or what's next.</p>
         </div>
         <div class="skill-group">
-          <h3>Automation &amp; scripting</h3>
-          <p>Python, PowerShell, FFmpeg, multi-stage production pipelines</p>
+          <h3>Let real data catch up</h3>
+          <p>Some projects can only go so far before they need real-world results. Those keep running and collecting, and the next step on the roadmap starts when there's enough to learn from.</p>
         </div>
         <div class="skill-group">
-          <h3>AI-assisted development</h3>
-          <p>Claude Code agentic workflows, prompt engineering, LLM-driven content &amp; code generation, local TTS/image models</p>
-        </div>
-        <div class="skill-group">
-          <h3>Tools &amp; workflow</h3>
-          <p>Git &amp; GitHub, VS Code, command-line tooling</p>
+          <h3>Keep it running</h3>
+          <p>Live on GitHub Pages, Cloudflare and Firebase, with tests, backups and alerts so things keep working when I'm not watching.</p>
         </div>
       </div>
+      <p class="built-with"><strong>Built with:</strong> Claude Code · Python · TypeScript / Next.js · HTML/CSS/JS · Node.js · Docker · GitHub Actions · Cloudflare · Firebase · FFmpeg · Ollama</p>
     </div>
   </section>
 
@@ -152,17 +147,18 @@
     <div class="wrap about-wrap">
       <h2 class="section-title">About</h2>
       <p>
-        I'm Skylar Knapp, a self-directed web developer and automation builder based in Rock Hill, SC.
-        I currently work in HVAC installation, and spent time before that in technical support
-        leadership at General Motors — in my own time I taught myself web development and
-        AI-assisted automation, building real sites and tools for family and friends' businesses
-        rather than through a bootcamp or degree. I pair traditional web development with AI-assisted
-        tooling to move faster: using Claude Code as a daily collaborator for everything from client
-        sites to full production pipelines.
+        I'm Skylar Knapp. I currently work in HVAC installation. Before that I spent time in technical support
+        leadership at General Motors, where I learned to troubleshoot under pressure and explain technical
+        problems to people who just need them fixed.
       </p>
       <p>
-        I'm looking for freelance or full-time work building websites, small business tooling, or
-        automation/AI-integration projects.
+        On my own time I started building with Claude, first simple websites for my cousin and me, then
+        bigger and bigger systems. What I'm good at isn't typing code. It's knowing what I want, describing it clearly,
+        and refining it round after round until it actually works. I genuinely enjoy finding out how far AI can go.
+      </p>
+      <p>
+        I'm looking for roles in AI automation, AI implementation, or technical support and solutions for AI products,
+        anywhere that needs someone who can turn "we should automate this" into something that actually runs.
       </p>
     </div>
   </section>
@@ -183,10 +179,14 @@
   <section id="contact" class="section contact-section">
     <div class="wrap">
       <h2 class="section-title">Let's work together</h2>
-      <p class="section-lede">Open to freelance projects and full-time roles — web development, business tooling, and AI-assisted automation.</p>
+      <p class="section-lede">Open to full-time roles and freelance projects in AI automation and AI-assisted building.</p>
       <div class="contact-links">
         <a href="mailto:sknapp1991@gmail.com" class="btn btn-primary">Email me</a>
         <a href="https://github.com/sknapp1991" class="btn btn-ghost" id="github-link">GitHub</a>
+        <!-- Uncomment once the accounts exist (fill in the real handles):
+        <a href="https://www.linkedin.com/in/skylarknapp" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://x.com/HANDLE" class="btn btn-ghost">X / Twitter</a>
+        -->
       </div>
     </div>
   </section>
@@ -195,7 +195,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>&copy; <span id="year"></span> Skylar Knapp. Built by hand, shipped with Claude Code.</p>
+    <p>&copy; <span id="year"></span> Skylar Knapp. Designed and built with Claude Code.</p>
   </div>
 </footer>
 
