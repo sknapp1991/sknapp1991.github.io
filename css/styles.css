@@ -368,3 +368,11 @@ a:hover { text-decoration: underline; }
   margin: 2em 0;
 }
 .case-note p:last-child { margin-bottom: 0; }
+
+/* ---------- Smaller projects line (added 2026-11-06) ---------- */
+.also-built {
+  margin-top: -32px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.also-built strong { color: var(--ink); }
