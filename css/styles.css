@@ -376,3 +376,17 @@ a:hover { text-decoration: underline; }
   color: var(--ink-soft);
 }
 .also-built strong { color: var(--ink); }
+
+/* ---------- About photo (added 2026-11-07) ---------- */
+.about-photo {
+  float: right;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 16px 28px;
+  border: 1px solid var(--line);
+}
+@media (max-width: 560px) {
+  .about-photo { float: none; display: block; width: 140px; height: 140px; margin: 0 0 20px; }
+}
