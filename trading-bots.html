@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paper-Trading Research Bots — Skylar Knapp</title>
-<meta name="description" content="Case study: two always-on paper-trading research systems built with Claude Code, designed so they cannot trade real money.">
+<meta name="description" content="Case study: two always-on paper-trading research systems built with Claude Code, built to run on their own and stay safe.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Two trading bots that have to prove themselves on paper first">
 <meta property="og:description" content="Case study by Skylar Knapp: two always-on paper-trading research systems built with Claude Code.">
@@ -36,15 +36,14 @@
 <main>
   <article class="wrap case-study">
     <p class="project-tag">Case study · Always-on data systems</p>
-    <h1>Two trading bots that have to prove themselves on paper first</h1>
+    <h1>Two always-on research bots, built with Claude Code</h1>
     <p class="hero-sub">
-      The long-term goal is a bot that trades real money. The short-term rule is that it has to earn that first.
-      So I built two research systems with Claude Code. They watch live markets around the clock and trade them
-      with pretend money, so every idea gets tested against the real market before any real dollars are involved.
+      I built two research systems with Claude Code. They watch live market data around the clock and trade
+      pretend money only. This page covers the engineering: how they're tested, monitored and kept running.
     </p>
 
     <div class="case-stats">
-      <div class="case-stat"><b>2</b><span>independent systems, each for a different kind of market</span></div>
+      <div class="case-stat"><b>2</b><span>independent systems</span></div>
       <div class="case-stat"><b>1,700+</b><span>automated tests, run on every change</span></div>
       <div class="case-stat"><b>200+</b><span>commits in the first four days</span></div>
       <div class="case-stat"><b>24/7</b><span>running in Docker, restarts itself after a crash or reboot</span></div>
@@ -53,31 +52,20 @@
     <h2>Where it started</h2>
     <p>
       It started as a bare-bones starter prompt I found on X. The first bot Claude Code built from it ran, but it
-      didn't really work. Over 200+ commits I turned it into two full systems: real market data, multiple strategies,
-      testing, monitoring, reporting and backups, running around the clock.
+      didn't really work. Over 200+ commits I turned it into two full systems with testing, monitoring, reporting
+      and backups, running around the clock.
     </p>
 
-    <h2>Paper first, real money later</h2>
+    <h2>Pretend money only</h2>
     <p>
-      For now the bots only read public market data and trade pretend money. No brokerage account or keys are
-      connected, and an automated check on every change makes sure it stays that way until a strategy has proven
-      itself and I decide it's time. Paper trading is the proving ground. Real money comes only after the results hold up.
+      The bots read public market data and trade pretend money. No brokerage account or keys are connected.
     </p>
 
     <h2>What they do</h2>
     <ul>
-      <li><strong>Record live markets around the clock</strong> and keep a full audit trail of every decision the system makes.</li>
-      <li><strong>Run several strategies in parallel</strong> on pretend money, so ideas can be compared on identical data.</li>
-      <li><strong>Protect themselves.</strong> They have built-in loss limits, and a one-file kill switch pauses all simulated
-        trading while data recording keeps going.</li>
+      <li><strong>Record live data around the clock</strong> and keep a full audit trail of what the system does.</li>
+      <li><strong>Pause safely.</strong> A one-file kill switch pauses simulated trading while data recording keeps going.</li>
     </ul>
-
-    <h2>Honest numbers, not exciting ones</h2>
-    <p>
-      The hardest part of this kind of research is not fooling yourself. The systems are designed to be skeptical of
-      their own results: every strategy is measured against a simple benchmark, the reports flag when a result could be
-      luck, and ideas that fail stay labeled as failed instead of being quietly deleted.
-    </p>
 
     <h2>Built to run without me watching</h2>
     <ul>
