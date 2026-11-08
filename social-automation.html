@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verses Across Social Accounts — Skylar Knapp</title>
+<meta name="description" content="Case study: a Claude Code setup that turns Verses Across releases into reviewed posts across four social accounts.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Claude setup that runs the Verses Across social accounts">
+<meta property="og:description" content="Case study by Skylar Knapp: release notes become reviewed posts across four accounts.">
+<meta property="og:image" content="https://skylarknapp.com/assets/og.png">
+<meta property="og:url" content="https://skylarknapp.com/social-automation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="wordmark">SK<span class="dot">.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#how">How I work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <article class="wrap case-study">
+    <p class="project-tag">Case study · AI automation</p>
+    <h1>How Claude runs the Verses Across socials</h1>
+    <p class="hero-sub">
+      My brother and I built <a href="https://versesacross.com">Verses Across</a>, a free app for reading the world's
+      scriptures side by side. Once it was live, it needed people to actually find it. So I set Claude Code up to run
+      its Instagram, TikTok, YouTube and Facebook Page, and I had a second model check every post before it goes out.
+    </p>
+
+    <div class="case-stats">
+      <div class="case-stat"><b>4</b><span>accounts: Instagram, TikTok, YouTube, Facebook Page</span></div>
+      <div class="case-stat"><b>2×</b><span>check-ins a day</span></div>
+      <div class="case-stat"><b>2</b><span>models on every post: one writes it, one checks it</span></div>
+      <div class="case-stat"><b>1</b><span>person who OKs anything sensitive: me</span></div>
+    </div>
+
+    <h2>How it works</h2>
+    <p>
+      The app and the social media each have their own Claude Code session. When the app session ships something, it
+      sends the social session a quick note: what changed and what's OK to say about it. The social session takes it from
+      there. It figures out what clip to record, writes the caption, and puts it on the schedule for each account.
+    </p>
+
+    <h2>What it handles</h2>
+    <ul>
+      <li><strong>The videos.</strong> A script records the live app in dark mode and cuts it into vertical clips. For
+        anything that shows reading progress, it'll use a made-up demo profile, not a real person's data.</li>
+      <li><strong>The captions.</strong> Everything comes from what actually shipped. Scripture text gets pulled straight
+        from the app's own files, never from memory, and the source and translator are named.</li>
+      <li><strong>The posting.</strong> Claude drives the browser: uploads the clip and fills in the caption.</li>
+      <li><strong>The check-ins.</strong> Twice a day it goes through the schedule, reads comments, and lets me know
+        about anything that needs me.</li>
+      <li><strong>The setup.</strong> It set up the channel and profile pages, plus contact, support, feedback and privacy
+        emails for the app that all land in one inbox, sorted into folders.</li>
+    </ul>
+
+    <h2>Nothing goes up without a second look</h2>
+    <p>
+      One Claude writes the post and a separate Fable model reads it and sends back edits. It's looking for anything the
+      clip doesn't back up, privacy slips, or wording that breaks the rules I set. Anything sensitive waits on me.
+    </p>
+    <p>
+      Not every catch comes from the reviewer, though. While filming a demo clip, the French column didn't light up like
+      the other languages. The caption got changed so it didn't say "every language," and the app session fixed the
+      French that same morning.
+    </p>
+
+    <h2>The rules are written down</h2>
+    <ul>
+      <li>Older translations get labelled with their edition and translator. AI translations get marked as AI.</li>
+      <li>Don't announce a feature before it's live.</li>
+      <li>One schedule file runs everything, and finished items get checked off with the date.</li>
+      <li>Never post the same thing twice.</li>
+    </ul>
+
+    <p>
+      I decide what the accounts should be and what the rules are, I OK the stuff that needs a person, and when something
+      slips, I figure out why and change the process so it doesn't happen again. Claude does the building and the
+      day-to-day.
+    </p>
+
+    <p><strong>Stack:</strong> Claude Code · Claude in Chrome · a Fable reviewer · Node.js clip scripts · ffmpeg · Cloudflare Email Routing</p>
+
+    <p><a href="index.html#work" class="project-link">← Back to all work</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Skylar Knapp. Designed and built with Claude Code.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
